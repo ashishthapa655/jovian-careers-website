@@ -6,9 +6,9 @@
   <div>
     <b> Location:</b> {{job['location']}}
   </div>
-  {%if 'Salary' in job %}
+  {%if job['salary'] != null %}
   <div>
-    <b> salary:</b> {{job['Salary']}}
+    <b> salary:</b> {{job['salary']}}
   </div>
   {% endif %}
 </div>
